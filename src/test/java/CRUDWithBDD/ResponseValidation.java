@@ -26,7 +26,7 @@ public class ResponseValidation {
 	
 	@Test
 	public void getOrganisation() {
-		String expData="Test Organization";
+		String expData="no id test";
 		Response res = when()
 		.get("http://hapi.fhir.org/baseR4/Organization?_pretty=true");
 		 String actData=res.jsonPath().get("entry[0].resource.name");
