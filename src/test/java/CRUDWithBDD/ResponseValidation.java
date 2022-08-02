@@ -51,7 +51,7 @@ public class ResponseValidation {
 	
 	@Test
 	public void getLocation() {
-		String expData="self";
+		String expData="jai";
 		Response res = when()
 		.get("http://hapi.fhir.org/baseR4/Location?_pretty=true");
 		 String actData=res.jsonPath().get("link[0].relation");
